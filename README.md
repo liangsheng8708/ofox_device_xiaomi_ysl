@@ -2,6 +2,8 @@
 
 For building TWRP for Xiaomi Redmi S2/Y2
 
+Kernel source: [ItsVixano/android_kernel_xiaomi_ysl](https://github.com/ItsVixano/android_kernel_xiaomi_ysl/tree/twrp)
+
 ===========================================
 
 Blocking checks
