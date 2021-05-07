@@ -2,15 +2,21 @@ version: 2.1
 jobs:
   compile:
    docker:
-      - image: fr3akyphantom/droid-builder:latest
+      - image: ubuntu:18.04
    steps:
       - run:
           command: |
-           git config --global user.name "ItsVixano"
-           git config --global user.email "vixanonew@gmail.com"
+           apt-get -y update && apt-get -y upgrade && apt-get -y install wget sudo git-core curl aria2 openjdk-8-jre openjdk-8-jdk
+           git config --global user.name "immat0x1"
+           git config --global user.email "immat0x1@protonmail.com"
            git config --global color.ui false
-           wget https://raw.githubusercontent.com/ItsVixano/android_device_xiaomi_ysl_twrp/android-9.0/.circleci/twrp_ci.sh
-           source twrp_ci.sh
+           git clone https://github.com/akhilnarang/scripts
+           cd scripts
+           bash setup/android_build_env.sh
+           bash setup/install_android_sdk.sh
+           cd ..
+           wget https://raw.githubusercontent.com/immat0x1/ofox_device_xiaomi_ysl/android-9.0/.circleci/of_ci.sh
+           bash of_ci.sh
 workflows:
   version: 2.1
   cooking:
