@@ -62,6 +62,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	  export OF_USE_GREEN_LED=0
 	  export OF_ALLOW_DISABLE_NAVBAR=0
 	  export OF_QUICK_BACKUP_LIST="/boot;/system_image;/vendor_image;"
+	  export OF_PATCH_AVB20=1
 
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
 	  export | grep "FOX" >> $FOX_BUILD_LOG_FILE
