@@ -57,6 +57,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	  export FOX_DELETE_AROMAFM=1
 	  export FOX_USE_BASH_SHELL=1
 	  export FOX_ASH_IS_BASH=1
+	  export FOX_USE_GREP_BINARY=1
+	  export FOX_USE_SED_BINARY=1
 
 	  export OF_CHECK_OVERWRITE_ATTEMPTS=1
 	  export OF_USE_GREEN_LED=0
