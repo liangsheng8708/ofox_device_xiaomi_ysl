@@ -54,6 +54,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
 
+# Lun file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
