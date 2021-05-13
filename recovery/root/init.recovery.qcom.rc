@@ -42,7 +42,7 @@ on fs
     start servicemanager
 
 on boot
-    setprop sys.usb.config none
+    setprop sys.usb.config mtp,adb
     setprop sys.usb.config adb
     # For generic DT2W
     chown system system /dev/input/event1
