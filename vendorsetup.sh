@@ -48,7 +48,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	  export OF_USE_TWRP_SAR_DETECT=1
 	  export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	  export OF_SCREEN_H=2160
-	  export OF_MAINTAINER="immat0x1"
+	  export OF_MAINTAINER="liangsheng8708"
 
 	  export FOX_USE_NANO_EDITOR=1
 	  export FOX_USE_TAR_BINARY=1
