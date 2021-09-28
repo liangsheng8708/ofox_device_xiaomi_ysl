@@ -49,6 +49,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	  export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	  export OF_SCREEN_H=2160
 	  export OF_MAINTAINER="liangsheng8708"
+          export FOX_BUILD_TYPE="Unofficial"
 
 	  export FOX_USE_NANO_EDITOR=1
 	  export FOX_USE_TAR_BINARY=1
